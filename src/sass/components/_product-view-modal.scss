@@ -33,16 +33,15 @@
             top: 5px;
             font-size: 35px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 color: $main-color;
             }
-
         }
     }
 
-    &.active &__content{
+    &.active &__content {
         opacity: 1;
-        transform: translateY(0)
+        transform: translateY(0);
     }
 }

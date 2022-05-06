@@ -1,19 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 
-import { set } from '../redux/product-modal/productModalSlice'
+import { set } from '../redux/product-modal/productModalSlice';
 
-import Button from './Button'
+import Button from './Button';
 
-import numberWithCommas from '../utils/numberWithCommas'
+import numberWithCommas from '../utils/numberWithCommas';
 
-const ProductCard = props => {
-
-    const dispatch = useDispatch()
+const ProductCard = (props) => {
+    const dispatch = useDispatch();
 
     return (
         <div className="product-card">
@@ -41,8 +40,8 @@ const ProductCard = props => {
                 </Button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 ProductCard.propTypes = {
     img01: PropTypes.string.isRequired,
@@ -50,6 +49,6 @@ ProductCard.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     slug: PropTypes.string.isRequired,
-}
+};
 
-export default ProductCard
+export default ProductCard;

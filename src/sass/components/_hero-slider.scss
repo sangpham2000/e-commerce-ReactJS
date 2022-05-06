@@ -57,7 +57,7 @@
             }
 
             &__title {
-                font-family: "M PLUS Rounded 1c", sans-serif;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
                 font-weight: 600;
                 font-size: 4.5rem;
                 line-height: 6.75rem;
@@ -123,8 +123,7 @@
                 bottom: 0;
                 right: 0;
                 transform: scale(0) rotate(65deg);
-                transition: transform 0.5s
-                    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
                 @include tablet {
                     height: 100%;

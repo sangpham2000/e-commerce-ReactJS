@@ -1,13 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Button = props => {
+const Button = (props) => {
+    const bg = props.backgroundColor ? 'bg-' + props.backgroundColor : 'bg-main';
 
-    const bg = props.backgroundColor ? 'bg-' + props.backgroundColor : 'bg-main'
+    const size = props.size ? 'btn-' + props.size : '';
 
-    const size = props.size ? 'btn-' + props.size : ''
-
-    const animate = props.animate ? 'btn-animate' : ''
+    const animate = props.animate ? 'btn-animate' : '';
 
     return (
         <button
@@ -15,23 +14,21 @@ const Button = props => {
             onClick={props.onClick ? () => props.onClick() : null}
         >
             <span className="btn__txt">{props.children}</span>
-            {
-                props.icon ? (
-                    <span className="btn__icon">
-                        <i className={`${props.icon} bx-tada`}></i>
-                    </span>
-                ) : null
-            }
+            {props.icon ? (
+                <span className="btn__icon">
+                    <i className={`${props.icon} bx-tada`}></i>
+                </span>
+            ) : null}
         </button>
-    )
-}
+    );
+};
 
 Button.propTypes = {
     backgroundColor: PropTypes.string,
     size: PropTypes.string,
     icon: PropTypes.string,
     animate: PropTypes.bool,
-    onclick: PropTypes.func
-}
+    onclick: PropTypes.func,
+};
 
-export default Button
+export default Button;

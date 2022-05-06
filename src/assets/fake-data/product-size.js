@@ -1,28 +1,28 @@
 const size = [
     {
-        display: "XS",
-        size: "xs"
+        display: 'XS',
+        size: 'xs',
     },
     {
-        display: "S",
-        size: "s"
+        display: 'S',
+        size: 's',
     },
     {
-        display: "M",
-        size: "m"
+        display: 'M',
+        size: 'm',
     },
     {
-        display: "L",
-        size: "l"
+        display: 'L',
+        size: 'l',
     },
     {
-        display: "XL",
-        size: "xl"
+        display: 'XL',
+        size: 'xl',
     },
     {
-        display: "XXL",
-        size: "xxl"
+        display: 'XXL',
+        size: 'xxl',
     },
-]
+];
 
-export default size
+export default size;
